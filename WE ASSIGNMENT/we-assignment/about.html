@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="styling.css">
+
+  <title>About us</title>
+  <style>
+    body {
+      background-image: url('images/back.jpg');
+      max-width: 600px;
+      margin: 20px auto;
+      background-color: rgb(255, 255, 255);
+      color: rgb(0, 0, 0);
+    }
+  </style>
+  <link rel="shortcut icon" type="images/jpg" href="images/logo1.jpg">
+</head>
+
+
+<body>
+  <a href="index.html" class="back">&laquo;<b>Home</b> </a>
+
+  <h1>The Doodle Design</h1>
+
+  <p class="text">
+    Welcome to our design company, <b><span style="color:purple">The Doodle</span></b> where creativity and innovation
+    meet
+    to produce
+    stunning and unique designs. Our team of skilled designers and artists work together to create
+    visually appealing designs that are both functional and aesthetically pleasing. We specialize in a
+    wide range of design services, including web design, graphic design, branding, and more. We take pride in
+    our ability to tailor our services to meet the specific needs of our clients, ensuring that their visions are
+    brought to life through our designs. At our design company, we prioritize our clients' satisfaction above
+    all else.3Dicons is a set of beautifully crafted open-source 3D icons that have been created in Blender and made
+    available to the community.
+    It has been released under a Creative Commons <b>CC0 license,</b> and hence it is free to use for personal and
+    commercial projects, as well as
+    copying, editing, remixing, sharing, and redrawing. <span class="dots"> ...</span> <span class="moreText"> We work
+      closely with our clients throughout the
+      design process to ensure that their expectations are exceeded. <br>
+      <b>Our promise </b>It's our attention to detail and commitment to excellence
+      have earned us a reputation as a trusted and reliable design company.Whether you're a small business looking to
+      establish
+      your brand or a large corporation in need of a website redesign, our team has the skills and expertise to deliver
+      exceptional
+      results.
+      Contact us today to see how our design company can help take your business to the next level,where creativity and
+      innovation meet to produce
+      stunning and unique designs. Our team of skilled designers and artists work together to create
+      visually appealing designs that are both functional and aesthetically pleasing.This resource will make it easier
+      for
+      designers and content creators to produce
+      beautiful and effective designs in less time. Although all icons are designed and rendered with a few color
+      options to
+      meet most of your
+      production-ready needs, you can use these images as placeholders until you are ready to outsource a 3D
+      illustrator.
+      Making it hard for any flat icon to steal the deal. We specialize in a
+      wide range of design services, including web design, graphic design, branding, and more. We take pride in
+      our ability to tailor our services to meet the specific needs of our clients, ensuring that their visions are
+      brought to life.
+      We take pride in
+      our ability to tailor our services to meet the specific needs of our clients, ensuring that their visions are
+      brought to life through our designs. </span></p>
+
+  <button style="background-color:rgb(72, 192, 225); text-align:left; color:white" class="read-more-btn">Read
+    More</button>
+
+
+  <!--Javascript-->
+
+
+  <script>
+    const readMoreBtn = document.querySelector(".read-more-btn");
+    const text = document.querySelector(".text");
+
+    readMoreBtn.addEventListener("click", (e) => {
+      text.classList.toggle("show-more");
+      if (readMoreBtn.innerText === "Read More") {
+        readMoreBtn.innerText = "Read Less";
+      } else {
+        readMoreBtn.innerText = "Read More";
+      }
+    });
+  </script>
+
+</body>
+
+</html>

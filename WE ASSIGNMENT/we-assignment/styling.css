@@ -1,0 +1,230 @@
+/* Add a black background color to the top navigation */
+* {
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 320px) {
+  .row,
+  .navbar {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .row,
+  .footer {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  body {
+    background-color: rgb(246, 246, 194);
+  }
+}
+
+
+.navbar {
+  display: flex;
+  background-color: #000000;
+  flex-wrap: wrap;
+  align-content: space-between;
+  justify-content: center;
+}
+
+.navbar a {
+  color: rgb(255, 255, 255);
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.navbar a:hover {
+  background-color: rgb(200, 222, 240);
+  color: black;
+}
+
+.navbar a:active {
+  background: rgb(72, 192, 225);
+  color: #fff;
+}
+
+.footer {
+  text-align: center;
+  padding: 3px;
+  background-color: rgb(200, 222, 240);
+  color: rgb(0, 0, 0);
+}
+
+.heading {
+  width: 75%;
+}
+
+.p-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.p-box h1 {
+  text-align: center;
+  color: rgb(0, 0, 0);
+  text-shadow: 2px 2px 4px #000000;
+  font-family: "Playfair Display";
+  font-size: 45px;
+}
+
+.p-box h2 {
+  font-family: "Raleway";
+  font-size: 22px;
+}
+
+.p-box h1:hover {
+  background: rgb(72, 192, 225);
+  color: #fff;
+}
+
+.p-box a {
+  margin-top: 10px;
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+}
+
+.p-box a:hover {
+  background: rgb(72, 192, 225);
+  color: #fff;
+}
+
+.p-box a:active {
+  background: yellow;
+  color: #000000;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* <style> */
+.holdingcontainer{
+  max-width: 100%;
+  max-height: 100%;
+  display: flex;
+  background: rgb(221, 239, 246);
+  padding: 50px;
+  box-sizing:border-box;
+  flex-direction: row;
+}
+
+.internalcontainerL{
+  flex: 1;
+  background: rgb(200,222,240);
+  padding: 30px;
+  font-size: 12px;
+  font-family: 'Roboto', sans-serif;
+  margin: 3px;
+}
+
+.internalcontainerM{
+  flex: 1;
+  background:white;
+  padding: 30px;
+  font-size: 12px;
+  font-family: 'Roboto', sans-serif;
+  margin: 3px;
+}
+
+.internalcontainerR{
+  flex: 1;
+  background: rgb(200,222,240);
+  padding: 30px;
+  font-size: 12px;
+  font-family: 'Roboto', sans-serif;
+  margin: 3px;
+}
+
+@media screen and (max-width: 768px){
+  .holdingcontainer{
+    flex-direction: column-reverse;
+  }
+}
+
+.previous {
+  background-color: #f1f1f1;
+  color: black;
+}
+
+
+.text {
+  font-size: 22px;
+
+}
+.moreText {
+  display: none;
+}
+.read-more-btn {
+  padding: 15px 60px;
+  border: none;
+  outline: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+.text.show-more .moreText {
+  display: inline;
+}
+.text.show-more .dots {
+  display: none;
+}
+
+.back {
+ background-color: #f1f1f1;
+ color: black;
+}
+
+@media screen and (max-width: 992px) {
+.text {
+font-size: 18px;
+}
+}
+
+@media screen and (max-width: 992px) {
+body {
+margin: 15px;
+}
+}
+
+@media screen and (max-width: 992px) {
+.moretext {
+font-size: 18px;
+}
+}
+
+
+@media screen and (max-width: 992px) {
+.read-more-btn {
+font-size: 16px;
+padding: 13px 55px;
+}
+}

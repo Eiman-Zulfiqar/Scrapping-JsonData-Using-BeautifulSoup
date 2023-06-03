@@ -1,0 +1,2 @@
+The WE assignment folder contains the files of my website(assignment 2). Then we have scrap.py file which is a python file which extract required data from only the html pages except images.
+To run this file use "python scrap.py" command. It will give you an output.json file with json data then run jsonweb.html file which shows the json data on webpage
